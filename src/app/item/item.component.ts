@@ -19,7 +19,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
         display: 'block',
         opacity: "1"
       })),
-      transition('start => end', animate( 500 ))
+      transition('start => end', animate( 500 )),
       transition('end => start', animate( 500 ))
     ])
   ]
