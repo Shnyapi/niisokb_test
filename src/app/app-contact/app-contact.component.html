@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <button [routerLink]="'new'" class="btn btn-success">Новый контакт</button>
+    
+        <div class="list-group list-group-flush">
+          <app-item *ngFor="let contact of curentList"
+                    [contactItem]="contact"
+                    (onEditContact)="getContact($event)"                
+          ></app-item>
+        </div>
+        <div class="paginatoin">
+            <div (click)="changePage($event)"
+                  *ngFor="let item of pageArrey; let idx = index"
+                  [routerLink]="['/contact', idx+1]">
+              {{idx + 1}}             
+            </div>
+        </div>    
+      </div>
+      <div class="col-sm">
+    
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+</div>
+
+

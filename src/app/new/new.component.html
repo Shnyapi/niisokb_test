@@ -1,0 +1,35 @@
+<div class="form-group">
+  <label for="Name" class="col-sm-2 control-label">Имя:</label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" id="Name" placeholder="Name" [(ngModel)]="name">
+  </div>
+</div>
+<div class="form-group">
+  <label for="Phone" class="col-sm-2 control-label">Телефон:</label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" id="Phone" placeholder="Phone" [(ngModel)]="phone">
+  </div>
+</div>
+<div class="form-group">
+  <label for="Email" class="col-sm-2 control-label">Емаил:</label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" id="Email" placeholder="Email" [(ngModel)]="email">
+  </div>
+</div>
+<div class="form-group">
+  <label for="Company" class="col-sm-2 control-label">Компания:</label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" id="Company" placeholder="Company" [(ngModel)]="company">
+  </div>
+</div>
+<div class="form-group">
+  <label for="Address" class="col-sm-2 control-label">Адрес:</label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" id="Address" placeholder="Address" [(ngModel)]="address">
+  </div>
+</div>
+<div class="form-group">
+    <div class="col-sm-10">
+      <button (click)="newContact()" class="btn btn-success">Отправить</button>
+    </div>
+</div>

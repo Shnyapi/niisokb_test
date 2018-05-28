@@ -1,0 +1,32 @@
+.wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.item{
+    width: 50%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.paginatoin{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    & div{
+        width: 30px;
+        height: 30px;
+        background: lightblue;
+        margin: 0 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border: 1px solid #000;
+    }
+}
+.contact-list{
+    list-style-type: none;
+    padding-left: 0;
+}

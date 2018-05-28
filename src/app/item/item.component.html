@@ -1,0 +1,13 @@
+<ul class="contact-list">
+  <li class="list-name" (click)="showList(hidden)"> <b>Имя: {{contactItem.name}}</b></li>
+  <ul class="contact-list" #hidden [@showContact]="contactState">
+    <li class="list-row">Телефон: {{contactItem.phone}}</li>
+    <li class="list-row">Электропочта: {{contactItem.email}}</li>
+    <li class="list-row">Компания: {{contactItem.company}}</li>
+    <li class="list-row">Адрес: {{contactItem.address}}</li>
+    <li class="list-row">
+      <button (click)="initEdit()" [routerLink]="['edit',contactItem.id]" class="btn btn-info">Изменить</button>
+      <button (click)="delContact()" class="btn btn-danger">Удалить</button>
+    </li>
+  </ul>
+</ul>

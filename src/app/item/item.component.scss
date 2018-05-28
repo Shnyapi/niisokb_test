@@ -1,0 +1,47 @@
+p{
+    margin: 0;
+}
+.contact-list{
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+.list-item{
+
+}
+.list-name{
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: lightblue;
+    margin-bottom: 5px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.list-row{
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    color: #000;
+
+    &:nth-child(odd){
+        background-color: lightpink;
+    }
+    &:nth-child(even){
+        background-color: lightyellow;
+    }
+    &:last-child{
+        justify-content: space-between;
+    }
+    & button{
+        cursor: pointer;
+    }
+}
+// .item-hidden{
+//     display: none;
+// }
