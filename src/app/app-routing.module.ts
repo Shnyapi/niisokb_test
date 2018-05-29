@@ -11,7 +11,7 @@ const appRoutes: Routes = [
             {path:"edit/:id", component: AppEditComponent},
             {path:"new", component: NewComponent},
         ]
-    },    
+    },
 ];
 
 @NgModule({
@@ -22,5 +22,3 @@ const appRoutes: Routes = [
 export class AppRoutingModule{
 
 }
-
-
